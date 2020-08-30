@@ -1,0 +1,1 @@
+# __MY BSPWM CONFIG__
