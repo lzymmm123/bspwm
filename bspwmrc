@@ -1,6 +1,5 @@
 #! /bin/sh
 
-$HOME/.config/polybar/launch.sh
 
 $HOME/.config/bspwm/autostart.sh
 
@@ -29,6 +28,8 @@ bspc rule -a Screenkey manage=off
 bspc rule -a scratchpad sticky=on state=floating
 bspc rule -a Image sticky=on state=floating
 bspc rule -a Rofi sticky=on state=floating
+bspc rule -a CImg sticky=on state=floating
+bspc rule -a baidunetdisk state=floating
 #bspc rule -a qq state=floating
 
 bspc rule -a Telegram state=floating desktop='^10'
