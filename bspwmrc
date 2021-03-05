@@ -1,8 +1,8 @@
 #! /bin/sh
 
-sxhkd &
-
 $HOME/.config/polybar/launch.sh
+
+$HOME/.config/bspwm/autostart.sh
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -26,10 +26,15 @@ bspc rule -a mpv state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-bspc rule -a scratchpad sticky=on state=floating hidden=on
+bspc rule -a scratchpad sticky=on state=floating
+bspc rule -a Image sticky=on state=floating
+bspc rule -a Rofi sticky=on state=floating
 #bspc rule -a qq state=floating
 
-bspc rule -a Telegram state=floating
+bspc rule -a Telegram state=floating desktop='^10'
+bspc rule -a TelegramDesktop state=floating desktop='^10'
+bspc rule -a qq state=floating
+bspc rule -a Qq state=floating
 bspc rule -a TelegramDesktop state=floating
 bspc rule -a mitalk state=floating
 bspc rule -a jetbrains-studio state=floating
