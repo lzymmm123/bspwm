@@ -1,7 +1,7 @@
 #!/bin/bash
 
  # change the desktop number here
- FLOATING_DESKTOP_ID=$(bspc query -D -d '^10')
+ FLOATING_DESKTOP_ID=$(bspc query -D -d '^9')
 
  bspc subscribe node_add | while read -a msg ; do
     desk_id=${msg[2]}
